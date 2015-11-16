@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- Definition for collection -->
+	<bean id="javaCollection" class="com.tutorialspoint.JavaCollection">
+		<!-- Results in a setAddressList (java.util.List) call -->
+		<property name="AddressList">
+			<list>
+				<value>MALI</value>			
+				<value>Guinea</value>
+				<value>Ivory Coast</value>
+				<value>Ivory Coast</value>
+			</list>
+		</property>
+		
+		<!-- Results in a setAddressSet(Java.util.Set) call -->
+		<property name="addressSet">
+			<set>
+				<value>MALI</value>
+				<value>Guinea</value>
+				<value>Ivory Coast</value>
+				<value>Ivory Coast</value>
+			</set>
+		</property>
+		
+		<!-- Results in a setAsddressMap(Javat.util.Map) call -->
+		<property name="addressMap">
+			<map>
+				<entry key="1" 	value="MALI" />
+				<entry key="2"	value="Guinea"/>
+				<entry key="3" 	value="Ivory Coast" />
+				<entry key="4"	value="Ivory Coast"/>
+			</map>
+		</property>
+		
+		<!-- Results in a setAddressProp(Java.util.Properties) call -->
+		<property name="addressProp">
+			<props>
+				<prop key="one">MALI</prop>
+				<prop key="two">Guinea</prop>
+				<prop key="three">Ivory Coast</prop>
+				<prop key="four">Ivory Coast</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
